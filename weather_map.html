@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8249165d21f9fdae7f59bf7603cccd23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8249165d21f9fdae7f59bf7603cccd23" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8249165d21f9fdae7f59bf7603cccd23 = L.map(
+                "map_8249165d21f9fdae7f59bf7603cccd23",
+                {
+                    center: [16.179155555555553, 53.30453333333333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_311386c055e882d960d4c8751dc2d5c5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_311386c055e882d960d4c8751dc2d5c5.addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+            var marker_ca0d0f6cd98a5b744694af6429b805dc = L.marker(
+                [17.3753, 78.4744],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_4fddad4906d8ce121b886f009533b582 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7642dfcbbbb7b40c60e8f6b9a924f14 = $(`<div id="html_b7642dfcbbbb7b40c60e8f6b9a924f14" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Hyderabad (IN)<br>             <b>🌡 Weather:</b> Haze, Clouds: 20%<br>             <b>🌡 Temperature:</b> 30.23°C (Feels like: 32.86°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 30.23°C / 32.73°C<br>             <b>💧 Humidity:</b> 58%<br>             <b>🧭 Wind:</b> 3.6 m/s at 100°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1009 hPa<br>             <b>☀ UV Index:</b> 13.41<br>             <b>⏰ Daylight:</b> 12:45:04<br>             <b>👀 Visibility:</b> 5000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 05:50:42 | <b>🌇 Sunset:</b> 2025-04-30 18:35:46             </div>`)[0];
+                popup_4fddad4906d8ce121b886f009533b582.setContent(html_b7642dfcbbbb7b40c60e8f6b9a924f14);
+            
+        
+
+        marker_ca0d0f6cd98a5b744694af6429b805dc.bindPopup(popup_4fddad4906d8ce121b886f009533b582)
+        ;
+
+        
+    
+    
+            marker_ca0d0f6cd98a5b744694af6429b805dc.bindTooltip(
+                `<div>
+                     🌡 Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3738739063bb48d538507136049d7d83 = L.marker(
+                [16.7833, 80.85],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_a9205d09a80f721c3af68a5023129bfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbad225f445de7f21fca3594bde5b9b1 = $(`<div id="html_fbad225f445de7f21fca3594bde5b9b1" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Nuzvid (IN)<br>             <b>☁ Weather:</b> Scattered clouds, Clouds: 32%<br>             <b>🌡 Temperature:</b> 30.47°C (Feels like: 31.1°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 30.47°C / 30.47°C<br>             <b>💧 Humidity:</b> 46%<br>             <b>🧭 Wind:</b> 4.1 m/s at 148°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1009 hPa<br>             <b>☀ UV Index:</b> 13.38<br>             <b>⏰ Daylight:</b> 12:43:40<br>             <b>👀 Visibility:</b> 10000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 05:41:54 | <b>🌇 Sunset:</b> 2025-04-30 18:25:34             </div>`)[0];
+                popup_a9205d09a80f721c3af68a5023129bfe.setContent(html_fbad225f445de7f21fca3594bde5b9b1);
+            
+        
+
+        marker_3738739063bb48d538507136049d7d83.bindPopup(popup_a9205d09a80f721c3af68a5023129bfe)
+        ;
+
+        
+    
+    
+            marker_3738739063bb48d538507136049d7d83.bindTooltip(
+                `<div>
+                     ☁ Nuzvid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_78a72e0d9cfcd8626f19bc2164d0ce4d = L.marker(
+                [28.6667, 77.2167],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_69bfefa3897ece3e34344e8b01ea8f4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcc822e859f7d908315b9a74d60dd56b = $(`<div id="html_bcc822e859f7d908315b9a74d60dd56b" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Delhi (IN)<br>             <b>🌡 Weather:</b> Haze, Clouds: 0%<br>             <b>🌡 Temperature:</b> 29.05°C (Feels like: 29.49°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 29.05°C / 29.05°C<br>             <b>💧 Humidity:</b> 48%<br>             <b>🧭 Wind:</b> 5.66 m/s at 90°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1009 hPa<br>             <b>☀ UV Index:</b> 10<br>             <b>⏰ Daylight:</b> 13:14:11<br>             <b>👀 Visibility:</b> 3000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 05:41:10 | <b>🌇 Sunset:</b> 2025-04-30 18:55:21             </div>`)[0];
+                popup_69bfefa3897ece3e34344e8b01ea8f4f.setContent(html_bcc822e859f7d908315b9a74d60dd56b);
+            
+        
+
+        marker_78a72e0d9cfcd8626f19bc2164d0ce4d.bindPopup(popup_69bfefa3897ece3e34344e8b01ea8f4f)
+        ;
+
+        
+    
+    
+            marker_78a72e0d9cfcd8626f19bc2164d0ce4d.bindTooltip(
+                `<div>
+                     🌡 Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b5bf23873f8f73b482194c4f2aaac2c5 = L.marker(
+                [16.5167, 80.6167],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_c64306b059bee59918bb12a4c307d5de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c009b606eba9e60c8d9f5686000dfeb = $(`<div id="html_4c009b606eba9e60c8d9f5686000dfeb" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Vijayawada (IN)<br>             <b>☁ Weather:</b> Scattered clouds, Clouds: 40%<br>             <b>🌡 Temperature:</b> 30.97°C (Feels like: 35.29°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 30.97°C / 30.97°C<br>             <b>💧 Humidity:</b> 62%<br>             <b>🧭 Wind:</b> 3.09 m/s at 60°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1009 hPa<br>             <b>☀ UV Index:</b> 13.29<br>             <b>⏰ Daylight:</b> 12:43:02<br>             <b>👀 Visibility:</b> 6000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 05:43:09 | <b>🌇 Sunset:</b> 2025-04-30 18:26:11             </div>`)[0];
+                popup_c64306b059bee59918bb12a4c307d5de.setContent(html_4c009b606eba9e60c8d9f5686000dfeb);
+            
+        
+
+        marker_b5bf23873f8f73b482194c4f2aaac2c5.bindPopup(popup_c64306b059bee59918bb12a4c307d5de)
+        ;
+
+        
+    
+    
+            marker_b5bf23873f8f73b482194c4f2aaac2c5.bindTooltip(
+                `<div>
+                     ☁ Vijayawada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eea836fe50e06b599167dc6a32f6db1c = L.marker(
+                [-78.1586, 16.4063],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_ec41e1e12ef83cf5859a598541d0e788 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a506190a9aca4b397febd9a0ddce11a9 = $(`<div id="html_a506190a9aca4b397febd9a0ddce11a9" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Antarctica (None)<br>             <b>☀ Weather:</b> Clear sky, Clouds: 7%<br>             <b>🌡 Temperature:</b> -47.75°C (Feels like: -54.75°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> -47.75°C / -47.75°C<br>             <b>💧 Humidity:</b> 96%<br>             <b>🧭 Wind:</b> 6.48 m/s at 57°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1047 hPa<br>             <b>☀ UV Index:</b> 0.02<br>             <b>⏰ Daylight:</b> 0:00:00<br>             <b>👀 Visibility:</b> 10000 meters<br>             <b>🌅 Sunrise:</b> 1970-01-01 05:30:00 | <b>🌇 Sunset:</b> 1970-01-01 05:30:00             </div>`)[0];
+                popup_ec41e1e12ef83cf5859a598541d0e788.setContent(html_a506190a9aca4b397febd9a0ddce11a9);
+            
+        
+
+        marker_eea836fe50e06b599167dc6a32f6db1c.bindPopup(popup_ec41e1e12ef83cf5859a598541d0e788)
+        ;
+
+        
+    
+    
+            marker_eea836fe50e06b599167dc6a32f6db1c.bindTooltip(
+                `<div>
+                     ☀ Antarctica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21c900b566d1604573030e4d371f6908 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_1bda1dc40ba95962161fc86081eb472d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76e82201595a0726e72f0abe69348b42 = $(`<div id="html_76e82201595a0726e72f0abe69348b42" style="width: 100.0%; height: 100.0%;">             <b>City:</b> New York (US)<br>             <b>☀ Weather:</b> Clear sky, Clouds: 0%<br>             <b>🌡 Temperature:</b> 21.09°C (Feels like: 20.8°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 17.75°C / 23.52°C<br>             <b>💧 Humidity:</b> 59%<br>             <b>🧭 Wind:</b> 6.69 m/s at 210°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1012 hPa<br>             <b>☀ UV Index:</b> 7.45<br>             <b>⏰ Daylight:</b> 13:52:49<br>             <b>👀 Visibility:</b> 10000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-29 15:26:49 | <b>🌇 Sunset:</b> 2025-04-30 05:19:38             </div>`)[0];
+                popup_1bda1dc40ba95962161fc86081eb472d.setContent(html_76e82201595a0726e72f0abe69348b42);
+            
+        
+
+        marker_21c900b566d1604573030e4d371f6908.bindPopup(popup_1bda1dc40ba95962161fc86081eb472d)
+        ;
+
+        
+    
+    
+            marker_21c900b566d1604573030e4d371f6908.bindTooltip(
+                `<div>
+                     ☀ New York
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e60ed98552000dcf76330014c8ae5a5 = L.marker(
+                [51.5085, -0.1257],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_ca264f2554ad33f843a439927b559ea4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d317247da8766e8518ce3bec7b5f6881 = $(`<div id="html_d317247da8766e8518ce3bec7b5f6881" style="width: 100.0%; height: 100.0%;">             <b>City:</b> London (GB)<br>             <b>☁ Weather:</b> Few clouds, Clouds: 20%<br>             <b>🌡 Temperature:</b> 8.65°C (Feels like: 8.07°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 7.06°C / 9.98°C<br>             <b>💧 Humidity:</b> 87%<br>             <b>🧭 Wind:</b> 1.54 m/s at 30°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1024 hPa<br>             <b>☀ UV Index:</b> 5.65<br>             <b>⏰ Daylight:</b> 14:47:20<br>             <b>👀 Visibility:</b> 10000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 10:03:56 | <b>🌇 Sunset:</b> 2025-05-01 00:51:16             </div>`)[0];
+                popup_ca264f2554ad33f843a439927b559ea4.setContent(html_d317247da8766e8518ce3bec7b5f6881);
+            
+        
+
+        marker_7e60ed98552000dcf76330014c8ae5a5.bindPopup(popup_ca264f2554ad33f843a439927b559ea4)
+        ;
+
+        
+    
+    
+            marker_7e60ed98552000dcf76330014c8ae5a5.bindTooltip(
+                `<div>
+                     ☁ London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac2cc048e8c7f4d7218688e14aa461a2 = L.marker(
+                [35.6895, 139.6917],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_bf2edc870bace7aa02bcfe024ddf3d83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1a99d6a517398ecdf4b0a5a7bfa7a4b = $(`<div id="html_f1a99d6a517398ecdf4b0a5a7bfa7a4b" style="width: 100.0%; height: 100.0%;">             <b>City:</b> Tokyo (JP)<br>             <b>☀ Weather:</b> Clear sky, Clouds: 0%<br>             <b>🌡 Temperature:</b> 22.81°C (Feels like: 21.88°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 20.75°C / 23.69°C<br>             <b>💧 Humidity:</b> 28%<br>             <b>🧭 Wind:</b> 3.6 m/s at 180°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1016 hPa<br>             <b>☀ UV Index:</b> 6.68<br>             <b>⏰ Daylight:</b> 13:35:34<br>             <b>👀 Visibility:</b> 10000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 01:20:36 | <b>🌇 Sunset:</b> 2025-04-30 14:56:10             </div>`)[0];
+                popup_bf2edc870bace7aa02bcfe024ddf3d83.setContent(html_f1a99d6a517398ecdf4b0a5a7bfa7a4b);
+            
+        
+
+        marker_ac2cc048e8c7f4d7218688e14aa461a2.bindPopup(popup_bf2edc870bace7aa02bcfe024ddf3d83)
+        ;
+
+        
+    
+    
+            marker_ac2cc048e8c7f4d7218688e14aa461a2.bindTooltip(
+                `<div>
+                     ☀ Tokyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6069b15d3395bc7aa48186fae0edd9f1 = L.marker(
+                [16.5167, 80.6167],
+                {
+}
+            ).addTo(map_8249165d21f9fdae7f59bf7603cccd23);
+        
+    
+        var popup_2f0adc2c343a7c6ce17debe947e50208 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5509a37a11e61eb2da6ebc73ab8a97f = $(`<div id="html_d5509a37a11e61eb2da6ebc73ab8a97f" style="width: 100.0%; height: 100.0%;">             <b>City:</b> vijayawada (IN)<br>             <b>☁ Weather:</b> Scattered clouds, Clouds: 40%<br>             <b>🌡 Temperature:</b> 30.97°C (Feels like: 35.29°C)<br>             <b>🔻 Min / 🔺 Max Temp:</b> 30.97°C / 30.97°C<br>             <b>💧 Humidity:</b> 62%<br>             <b>🧭 Wind:</b> 3.09 m/s at 60°<br>             <b>🌧 Rain (last 1h):</b> 0 mm<br>             <b>🎯 Pressure:</b> 1009 hPa<br>             <b>☀ UV Index:</b> 13.29<br>             <b>⏰ Daylight:</b> 12:43:02<br>             <b>👀 Visibility:</b> 6000 meters<br>             <b>🌅 Sunrise:</b> 2025-04-30 05:43:09 | <b>🌇 Sunset:</b> 2025-04-30 18:26:11             </div>`)[0];
+                popup_2f0adc2c343a7c6ce17debe947e50208.setContent(html_d5509a37a11e61eb2da6ebc73ab8a97f);
+            
+        
+
+        marker_6069b15d3395bc7aa48186fae0edd9f1.bindPopup(popup_2f0adc2c343a7c6ce17debe947e50208)
+        ;
+
+        
+    
+    
+            marker_6069b15d3395bc7aa48186fae0edd9f1.bindTooltip(
+                `<div>
+                     ☁ vijayawada
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
